@@ -3,3 +3,9 @@ spring:
     config:
       uri: http://localhost:8888
       profile: ${spring.profiles.active}
+  application:
+    name: accounts
+  profiles:
+    active: development
+  jackson:
+    default-property-inclusion: non_null
