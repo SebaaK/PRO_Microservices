@@ -20,4 +20,4 @@ spring:
         enabled: true
 
 accounts:
-  allow-get-accounts: false
+  allow-get-accounts: true
