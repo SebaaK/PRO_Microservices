@@ -1,0 +1,16 @@
+info:
+  app:
+    name: ${spring.application.name}
+    version: "0.0.1"
+    profile: ${spring.profiles.active}
+  serverInfo:
+    port: ${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, refresh, metrics, mappings
+  info:
+    env:
+      enabled: true

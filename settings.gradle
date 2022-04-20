@@ -1,3 +1,4 @@
 rootProject.name = 'PRO_Microservices'
 include 'accounts'
 include 'config-server'
+include 'accounts'
