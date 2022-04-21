@@ -1,0 +1,17 @@
+server:
+  port: 9800
+
+spring:
+  datasource:
+    url: jdbc:h2:file:~/data/cards
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: validate
+      database-platform: org.hibernate.dialect.H2Dialect
+    h2:
+      console:
+        enabled: true
