@@ -1,0 +1,16 @@
+info:
+  app:
+    name: ${spring.application.name}
+    version: "0.0.1"
+    profile: ${spring.profiles.active}
+  serverInfo:
+    port: ${server.port}
+management:
+  info:
+    env:
+      enabled: true
+eureka:
+  client: ${eureka-client}
+spring:
+  datasource:
+    initialization-mode: always
