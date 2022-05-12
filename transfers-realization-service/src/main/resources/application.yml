@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: transfers-realization-service
+  profiles:
+    active: development
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: ${spring.application.name}
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+server:
+  port: 9991
